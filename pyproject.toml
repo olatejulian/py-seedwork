@@ -1,0 +1,24 @@
+[project]
+name = "python-seedwork"
+version = "0.1.0"
+description = "Clean arch and design patterns prototypes"
+authors = [
+    {name = "olatejulian", email = "julian.lf.olate@gmail"},
+]
+dependencies = [
+    "pydantic>=1.10.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+[project.optional-dependencies]
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+    "pytest>=7.1.3",
+]
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
