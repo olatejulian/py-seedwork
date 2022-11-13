@@ -1,5 +1,6 @@
 from seedwork.type import Event
 
+
 class EventManager:
     def __init__(self):
         self.__events: list[Event]
