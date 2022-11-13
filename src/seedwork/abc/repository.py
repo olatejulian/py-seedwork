@@ -2,12 +2,11 @@ from abc import ABC, abstractmethod
 from typing import Generic, TypeVar
 from uuid import UUID
 
-from ..entity import Entity
 
-E = TypeVar("E", bound=Entity)
+E = TypeVar("E")
 
 
-class Repository(Generic[E], ABC):
+class AbstractRepository(Generic[E], ABC):
     @abstractmethod
     def create(self, entity: E) -> E:
         raise NotImplementedError()

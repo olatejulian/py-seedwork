@@ -4,4 +4,8 @@ __pycache__/
 .history/
 .vscode/
 build/
+dist/
+
+.pdm.toml
+pdm.lock
 .env

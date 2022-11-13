@@ -1,5 +1,5 @@
 from pydantic import BaseModel
 
 
-class Event(BaseModel):
+class BaseMixin(BaseModel):
     pass

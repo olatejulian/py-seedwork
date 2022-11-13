@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
 
-class Factory(ABC):
+class AbstractFactory(ABC):
     @abstractmethod
     def create(self):
-        raise NotImplementedError()
+        raise NotImplementedError
